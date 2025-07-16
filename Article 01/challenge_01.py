@@ -1,4 +1,4 @@
-from pyrogram import Client,types
+from pyrogram import Client
 
 
 bot = Client(
@@ -10,7 +10,7 @@ bot = Client(
 
 
 @bot.on_message()
-def echo(client,message:types.Message):
+def echo(client,message):
     text = message.text
     firstname = message.from_user.first_name
     user_id = message.from_user.id
