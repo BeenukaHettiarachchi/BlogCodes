@@ -1,4 +1,4 @@
-from pyrogram import Client
+from pyrogram import Client, filters
 
 
 bot = Client(
@@ -9,12 +9,8 @@ bot = Client(
 )
 
 
-@bot.on_message()
-def echo(client,message):
-    text = message.text
-    if text:
-        message.reply(text)
-    else:
-        print('This isn\'t a text message')
+@bot.on_message(filters.new_chat_members)
+def welcome(client, message):
+    message.reply('Hi, welcome to the chat!')
 
-bot.run()   
+bot.run()
