@@ -1,5 +1,4 @@
-
-# Standard way
+# Ternary if
 
 a = 10
 b = 15
