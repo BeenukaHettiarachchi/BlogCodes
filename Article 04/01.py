@@ -1,13 +1,11 @@
-# Ternary if
+# Multiple assignment
 
-a = 10
-b = 15
+a = 'I'
+b = 'Love'
+c = 'You'
 
-# Standard Methode
-if a > b:
-    print('a > b')
-else:
-    print('b > a')
-    
-# Pro Methode
-print('a > b' if a > b else 'b > a')
+print(a,b,c)
+
+a, b, c = 'I', 'Love', 'You'
+
+print(a,b,c)
