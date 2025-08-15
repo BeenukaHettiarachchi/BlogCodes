@@ -13,4 +13,4 @@ class Dog:
 
     
 tommy = Dog('Tommy','Labrador Retriever','Black',2)
-print(tommy.dog_years2human_years())
+print(tommy.dog_years_2_human_years())
