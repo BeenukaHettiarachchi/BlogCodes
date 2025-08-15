@@ -7,12 +7,10 @@ class Dog:
         self.color = color
         self.age = age
         
+    def dog_years_2_human_years(self):
+        return self.age*7
         
-    @classmethod
-    def from_str(cls,args):
-        name, breed, color, age = args.split(',')
-        return cls(name,breed,color,int(age))
-    
 
-d = Dog.from_str('Luca,Doberman,Black & Rust,4')
-print(d.name)
+    
+tommy = Dog('Tommy','Labrador Retriever','Black',2)
+print(tommy.dog_years2human_years())
