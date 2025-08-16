@@ -1,7 +1,7 @@
 class Dog:
     species = ""
 
-    def __init__(self,name,breed,color,age):
+    def __init__(self,name,breed,age):
         self.name = name    
         self.breed = breed  
         self.age = age      
